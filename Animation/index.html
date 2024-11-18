@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario run - Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(
+                to right, 
+                rgba(0, 0, 0, 0.3), 
+                rgba(0, 0, 0, 0.3)
+                ), url("images/mario-bg.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        img {
+            width: 150px;
+            position: absolute;
+            left: 0;
+            bottom: 3.8%;
+            animation: mario-run 4s linear infinite;
+        }
+        @keyframes mario-run {
+            0% {
+                transform: translate(0);
+            }
+            100% {
+                transform: translate(calc(100vw - 150px));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/output-onlinegiftools.gif" alt="mario-run">
+    </div>
+</body>
+</html>
