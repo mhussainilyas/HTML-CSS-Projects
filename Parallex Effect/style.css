@@ -14,7 +14,7 @@ section {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('images/pexels-divinetechygirl-1181244.jpg');
+    url('../Images/para-1.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -29,7 +29,7 @@ section {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('images/pexels-luis-gomes-166706-546819.jpg');
+    url('../Images/para-2.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -39,7 +39,7 @@ section {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('images/pexels-markusspiske-360591.jpg');
+    url('../Images/para-3.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -50,7 +50,7 @@ section {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ), 
-    url('images/pexels-nemuel-6424586.jpg');
+    url('../Images/para-4.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
