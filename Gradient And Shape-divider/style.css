@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+::selection {
+    background-color: #bfe9ff;
+    color: #ff6e7f;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hero-section {
+  background: #ff6e7f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bfe9ff,
+    #ff6e7f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bfe9ff,
+    #ff6e7f,
+    #e5e5be
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 400% 400%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  animation: flow 7s linear infinite;
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Shape divider */
+.custom-shape-divider-bottom-1732232461 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1732232461 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1732232461 .shape-fill {
+  fill: #ffffff;
+}
+
+/* Hero-section text */
+.text {
+  color: #0a0f17;
+  text-align: center;
+
+  & h1 {
+    font-size: 6rem;
+    color: #ffffff;
+  }
+
+  & p {
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+}
