@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.dot-icon {
+    width: 3rem;
+}
+
+section {
+    width: 100%;
+    height: calc(100vh - 54px);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-bar {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 1.6rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sign-in-btn {
+    background-color: #4587f0;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 2px;
+}
+
+#center-text {
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#google-logo img {
+    width: 290px;
+}
+
+#google-search input {
+    width: 70%;
+    font-size: 1.6rem;
+    padding: 15px 20px;
+    border-radius: 35px;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    /* box-shadow: rgba(149, 157, 165, 0.1) 0px 0px 2   4px; */
+}
+
+.google-btn button {
+    background-color: #f2f2f2;
+    color: #2b2b2b;
+    border: none;
+    border-radius: 2px;
+    margin: 0px 10px;
+    padding: 10px 15px;
+    font-size: 1.6rem;
+}
+
+/* 
+==============================
+     Responsive Design
+============================== 
+*/
+
+/* --------- For Tbalets -------- */
+@media (width <= 991px) {
+   html {
+    font-size: 55%;
+   }
+}
+
+@media (width <= 680px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    #left-menu {
+        display: none;
+    }
+
+    .top-bar {
+        justify-content: flex-end;
+        padding: 15px;
+    }
+
+    #google-logo img {
+        width: 200px;
+    }
+
+    #center-text {
+        width: 100%;
+    }
+
+    #google-search input {
+        width: 90%;
+    }
+}
