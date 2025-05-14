@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+h1 {
+  padding: 0 0 30px;
+}
+
+:root {
+  --white: #fff;
+  --background: #eee;
+  --color1: #c60505;
+  --color2: #510101;
+}
+
+.ribbon {
+  text-align: center;
+  background: var(--background);
+  padding: 40px 0;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+
+.ribbon p {
+  font-size: 18px;
+  text-transform: none;
+  font-weight: normal;
+  margin: 20px 20px 0;
+  color: #000;
+}
+
+.ribbon h3 {
+  background: var(--color1);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  margin: 0 -15px;
+  position: relative;
+}
+
+.ribbon h3:before,
+.ribbon h3:after {
+  content: "";
+  background: linear-gradient(to top right, transparent 49%, var(--color2) 50%);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+.ribbon h3:after {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to top left, transparent 49%, var(--color2) 50%);
+}
+
+.ribbon.orange {
+  --color1: #f75700;
+}
+
+.ribbon.orange h3:before,
+.ribbon.orange h3:after {
+  --color2: #ec3305;
+}
+
+.ribbon.purple {
+  --color1: #9f27e8;
+}
+
+.ribbon.purple h3:before,
+.ribbon.purple h3:after {
+  --color2: #6101e5;
+}
+
+.ribbon.blue {
+  --color1: #1dc0e1;
+}
+
+.ribbon.blue h3:before,
+.ribbon.blue h3:after {
+  --color2: #0284f3;
+}
+
+@media screen and (max-width: 990px) {
+  .ribbon {
+    margin-bottom: 50px;
+  }
+}

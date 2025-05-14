@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+
+:root {
+  --white-color: #fff;
+  --bg-color: #eee;
+  --color-1: #0be881;
+  --color-2: #05c46b;
+}
+
+h3 {
+  font-family: "Playwrite IT Moderna", cursive;
+}
+
+p {
+    padding: 10px 20px 0;
+    font-size: 17px;
+}
+
+.ribbon {
+  background: var(--bg-color);
+  text-align: center;
+  position: relative;
+  padding: 40px 0;
+  margin: 0 0 0 15px;
+}
+
+.ribbon h3 {
+  color: var(--white-color);
+  background: var(--color-1);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  width: calc(100% - 20px);
+  border-radius: 0 50px 50px 25px;
+  position: relative;
+  left: -15px;
+}
+
+.ribbon:before {
+  content: "";
+  background: var(--color-2);
+  width: 15px;
+  height: 25px;
+  border-radius: 50px 0 0 50px;
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  z-index: 1;
+}
+
+.ribbon:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: var(--color-1);
+  position: absolute;
+  top: 25px;
+  left: -15px;
+  z-index: 0;
+}
+
+.ribbon.red {
+  --color-1: #ef5777;
+}
+.ribbon.red:before {
+  --color-2: #f53b57;
+}
+.ribbon.purple {
+  --color-1: #575fcf;
+}
+.ribbon.purple:before {
+  --color-2: #3c40c6;
+}
+.ribbon.blue {
+  --color-1: #4bcffa;
+}
+.ribbon.blue:before {
+  --color-2: #0fbcf9;
+}
+
+@media screen and (max-width: 990px) {
+  .ribbon {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,70 @@
+:root {
+  --white-color: #ffffff;
+  --bg-color: #eeeeee;
+  --color1: #ff7f50;
+  --color2: #ff6348;
+}
+
+.ribbon {
+  background: var(--bg-color);
+  border-radius: 5px;
+  padding-bottom: 30px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.ribbon p {
+  margin: 20px 20px 0;
+  font-size: 17px;
+}
+
+.ribbon h3 {
+  background: var(--color1);
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 40px 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  margin: -15px 0 0 30px;
+}
+
+.ribbon::before {
+  content: "";
+  background: linear-gradient(
+    to bottom right,
+    transparent 49%,
+    var(--color2) 50%
+  );
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+}
+
+.ribbon.orange {
+  --color1: #eccc68;
+}
+.ribbon.orange:before {
+  --color2: #ffa502;
+}
+.ribbon.green {
+  --color1: #7bed9f;
+}
+.ribbon.green:before {
+  --color2: #2ed573;
+}
+.ribbon.pink {
+  --color1: #ff6b81;
+}
+.ribbon.pink:before {
+  --color2: #ff4757;
+}
+
+@media screen and (max-width: 990px) {
+  .ribbon {
+    margin-bottom: 50px;
+  }
+}
